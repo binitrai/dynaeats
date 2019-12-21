@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from "./UserInfo.css";
 import {connect} from "react-redux";
 function UserInfo (props) {
     if (props.auth) {
