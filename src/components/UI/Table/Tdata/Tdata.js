@@ -8,11 +8,17 @@ function tdata(props) {
     let keys = Object.keys(data);
     keys.shift();
     return keys.map(item => {
+         let content = ""
+         if (typeof data[item] == "object") {
+             content = <span className={classes[data[item].style]}>{data[item].text}</span>
+         } else {
+             content = data[item];
+         }
         return (
             <td 
                 key={id + item}
             > 
-                {data[item]}
+                {content}
                 {props.editableTh.indexOf(item) !== -1 &&
                   <span 
                     className={classes.edit_icon}
