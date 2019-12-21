@@ -9,7 +9,7 @@ function tdata(props) {
     keys.shift();
     return keys.map(item => {
          let content = ""
-         if (typeof data[item] == "object") {
+         if (typeof data[item] === "object") {
              content = <span className={classes[data[item].style]}>{data[item].text}</span>
          } else {
              content = data[item];
