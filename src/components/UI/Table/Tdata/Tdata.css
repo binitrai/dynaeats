@@ -10,3 +10,9 @@
     height: 12px;
     cursor: pointer;
 }
+td .green {
+    color : green;
+}
+td .red {
+    color : red;
+}
