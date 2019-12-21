@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 function UserInfo (props) {
     if (props.auth) {
         return (
-            <div className={classes.UserInfo}>User : {props.name}</div>
+            <div>User : {props.name}</div>
         )
     } else {
         return null;
